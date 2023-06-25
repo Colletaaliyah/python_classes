@@ -61,7 +61,7 @@ def calculate_gross_salary(salary, benefits):
 def calculate_nssf(gross_salary):
     nssf_rate = 0.06 
     max_deductible_nssf = 18000
-    nssf = min((grosss_salary * nssf_rate), max_deductible_nssf)
+    nssf = min((gross_salary * nssf_rate), max_deductible_nssf)
 
     return (nssf)
 salary = float(input("Enter salary: "))

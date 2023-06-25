@@ -6,15 +6,20 @@
 # If the driver gets more than 12 points, the function should print: “License suspended”.
 
 speed = int(input('Enter speed: '))
-if speed < 70:
+if speed <= 70:
     print('Ok!')
-else:
-    demerit_points=0
-    print(len(list(range(70,speed,5))))
-    # for i in range (70,speed,5):
-    #     demerit_points = demerit_points + 1
-    # print("Points:",demerit_points)
-    # if speed > 70 and speed < 75:
 
-    # if demerit_points > 12:
-    #     print('License Suspended!')
+demerit_points=0
+#     print(len(list(range(70,speed,5))))
+# demerit_points=0
+if speed <76 and speed > 71:
+    print ('The demerit points are ',((speed-71)/5))
+for i in range (71,speed,5):
+    demerit_points = demerit_points + 1
+    if (speed-71)/5 != 0:
+        print('The points are',((speed -71)/5))
+print ("Points:",demerit_points)
+if demerit_points > 12:
+    print ('License Suspended')
+
+
